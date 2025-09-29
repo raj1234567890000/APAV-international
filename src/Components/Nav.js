@@ -55,9 +55,11 @@ export default function Nav() {
        
       >
         <AppBar
-          position="relative"
+          position="fixed"
           sx={{
-            background: "black",
+            background: "teal",
+            boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+            padding: "0 20px",
            
           }}
         >
