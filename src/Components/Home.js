@@ -100,7 +100,7 @@ const Home = () => {
 
       {/* Product Grid Sections */}
       {[ "RO System and Plant", "Ice Machine Spare Parts", "Drinking Water Fountain" ].map((title, idx) => (
-        <section key={idx} className="py-12 bg-gradient-to-r from-teal-50 via-green-50 to-lime-50">
+        <section key={idx} className="py-12 bg-gradient-to-r from-blue-50 via-teal-50 to-pink-50 to-lime-50">
           <div className="flex items-center justify-between px-6 mb-6">
             <h2 className="text-2xl font-bold">{title}</h2>
             <Button variant="contained" color="success">View All</Button>
