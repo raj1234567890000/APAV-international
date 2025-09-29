@@ -72,7 +72,7 @@ const Home = () => {
       </section>
 
       {/* Featured Products */}
-      <section className="w-full bg-gradient-to-r from-pink-50 via-orange-50 to-yellow-50 py-10">
+      <section className="w-full bg-gradient-to-r from-blue-50 via-teal-50 to-pink-50 py-10">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-6 text-gray-800 text-center">Featured Products</h2>
           <div className="flex space-x-6 overflow-x-auto scrollbar-hide py-4">
@@ -129,7 +129,7 @@ const Home = () => {
       ))}
 
       {/* Product Videos Section */}
-      <section className="py-16 bg-gradient-to-r from-purple-50 via-pink-50 to-orange-50">
+      <section className="py-16 bg-gradient-to-r from-blue-50 via-teal-50 to-pink-50">
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold text-center mb-12">Our Product Videos</h2>
           <div className="grid md:grid-cols-3 gap-8">
