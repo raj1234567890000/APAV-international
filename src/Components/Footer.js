@@ -99,7 +99,7 @@ export default function Footer() {
       {/* Bottom Section */}
       <div className="border-t border-gray-300 mt-12 py-6 text-center text-gray-700 text-sm relative z-10">
         ©APAV International Private Limited. All Rights Reserved (Terms of Use) <br />
-        Developed by <span className="font-semibold text-teal-700">Ankur Chauchan</span>
+        Developed by <span className="font-semibold text-teal-700">Rohit Rajput</span>
       </div>
     </footer>
   );
