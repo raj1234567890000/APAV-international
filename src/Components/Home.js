@@ -13,7 +13,7 @@ Barcode,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import Button from "@mui/material/Button";
-import RatingsReviews from "./RatingsReview";
+
 import Footer from "./Footer";
 import Nav from "./Nav";
 
@@ -342,7 +342,7 @@ const Home = () => {
       <section className="w-full bg-gradient-to-r from-blue-50 to-teal-50 py-12"> <div className="max-w-6xl mx-auto px-6"> {/* Header */} <div className="text-center mb-10"> <h2 className="text-3xl md:text-4xl font-bold text-gray-800"> WELCOME TO </h2> <h1 className="text-2xl md:text-3xl font-semibold text-teal-700 mt-2"> APAV International Pvt Ltd </h1> <p className="mt-4 text-gray-600 max-w-2xl mx-auto"> We have established ourselves as a leading manufacturer of a wide range of Water Purifier Systems and Coolers. These offered products are highly appreciated for their high quality and super performance. </p> <p className="mt-4 text-lg font-semibold text-gray-800 flex justify-center items-center gap-2"> <Phone size={18} className="text-teal-600" /> 76689900092,76689900092 </p> <button className="mt-6 bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"> Read More... </button> </div> {/* Contact Us */} <div className="bg-white shadow-md rounded-lg p-6 md:p-10"> <h3 className="text-2xl font-bold text-gray-800 mb-4"> GET IN TOUCH WITH US FOR BEST DEALS </h3> <button className="bg-green-700 text-white px-6 py-2 rounded-md hover:bg-green-800 transition"> Contact Us </button> {/* Company Details Grid */} <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 text-gray-700"> <div className="space-y-3"> <p className="flex items-center gap-2"> <Building2 size={18} className="text-teal-600" /> <span className="font-semibold">Nature of Business:</span> Trader - Retailer </p> <p className="flex items-center gap-2"> <Users size={18} className="text-teal-600" /> <span className="font-semibold">Total Employees:</span> Upto 10 People </p> <p className="flex items-center gap-2"> <Calendar size={18} className="text-teal-600" /> <span className="font-semibold">GST Registration Date:</span> 31-07-2017 </p> <p className="flex items-center gap-2"> <FileText size={18} className="text-teal-600" /> <span className="font-semibold">Legal Status of Firm:</span> Limited Company </p> </div> <div className="space-y-3"> <p className="flex items-center gap-2"> <DollarSign size={18} className="text-teal-600" /> <span className="font-semibold">Annual Turnover:</span> 1.5 - 5 Cr </p> <p className="flex items-center gap-2"> <Globe size={18} className="text-teal-600" /> <span className="font-semibold">Import Export Code (IEC):</span> 0508070945 </p> <p className="flex items-center gap-2"> <Barcode size={18} className="text-teal-600" /> <span className="font-semibold">GST No.:</span>4525253265223 </p> <p className="flex items-center gap-2"> <FileText size={18} className="text-teal-600" /> <span className="font-semibold">CIN No.:</span> U32109DL2004PTC125842 </p> <p className="flex items-center gap-2 text-green-700 font-semibold"> <ShieldCheck size={18} className="text-green-600" /> Trustseal Verified </p> </div> </div> </div> </div> </section>
 
       {/* Ratings & Footer */}
-      <RatingsReviews />
+     
       <Footer />
    
     </>
