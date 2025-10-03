@@ -93,7 +93,7 @@ const Home = () => {
                   </ul>
                   <button
                     onClick={() => setModalOpen(true)}
-                    className="mt-4 w-full h-12 bg-pink-600 hover:bg-pink-700 text-white rounded-md font-semibold transition-transform duration-200 hover:scale-105 flex items-center justify-center"
+                    className="mt-4 w-full h-12 bg-blue-500 hover:bg-blue-700 text-white rounded-md font-semibold transition-transform duration-200 hover:scale-105 flex items-center justify-center"
                   >
                     Get Details
                   </button>
@@ -106,7 +106,7 @@ const Home = () => {
 
       {/* Product Grid Sections */}
       {[ "RO System and Plant", "Ice Machine Spare Parts", "Drinking Water Fountain" ].map((title, idx) => (
-        <section key={idx} className="py-12 bg-gradient-to-r from-blue-50 via-teal-50 to-pink-50 to-lime-50">
+        <section key={idx} className="py-12 bg-gradient-to-r from-blue-50 via-teal-50 to-pink-50">
           <div className="flex items-center justify-between px-6 mb-6">
             <h2 className="text-2xl font-bold">{title}</h2>
             <Button variant="contained" color="success">View All</Button>
@@ -123,7 +123,7 @@ const Home = () => {
                   </ul>
                   <button
                     onClick={() => setModalOpen(true)}
-                    className="mt-4 w-full h-12 bg-pink-600 hover:bg-pink-700 text-white  rounded-md font-semibold transition-transform duration-200 hover:scale-105 flex items-center justify-center"
+                    className="mt-4 w-full h-12 bg-blue-600 hover:bg-blue-700 text-white  rounded-md font-semibold transition-transform duration-200 hover:scale-105 flex items-center justify-center"
                   >
                     Get Details
                   </button>
@@ -144,7 +144,7 @@ const Home = () => {
               <motion.div key={i} whileHover={{ scale: 1.03, boxShadow: "0 15px 30px rgba(0,0,0,0.2)" }} className="bg-white shadow-lg rounded-xl overflow-hidden flex flex-col">
                 <video src={vid.video} controls className="w-full h-64 object-cover" />
                 <div className="p-6 text-center flex-1 flex flex-col justify-end">
-                  <button onClick={() => setModalOpen(true)} className="w-full h-12 bg-pink-600 hover:bg-pink-700 text-white rounded-md font-semibold transition-transform duration-200 hover:scale-105 flex items-center justify-center">
+                  <button onClick={() => setModalOpen(true)} className="w-full h-12 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-semibold transition-transform duration-200 hover:scale-105 flex items-center justify-center">
                     Get Details
                   </button>
                 </div>
