@@ -52,7 +52,7 @@ function Search() {
   return (
     <>
       <Nav />
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-teal-50 mt-16">
+      <div className="min-h-screen bg-gradient-to-r from-blue-50 via-teal-50 to-pink-50  mt-16">
         <header className="text-center py-10">
           <h1 className="text-4xl font-extrabold text-gray-800 tracking-tight">
             All Product List
