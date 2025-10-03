@@ -8,6 +8,8 @@ import Footer from "./Footer";
 import QuoteModal from "./QuoteModal";
 
 
+
+
 const categories = [
   { name: "RO System and Plant", img: "https://5.imimg.com/data5/SELLER/Default/2022/12/SR/RB/SG/1758521/customized-ro-plant-125x125.webp" },
   { name: "Ice Machine Spare Parts", img: "https://5.imimg.com/data5/SELLER/Default/2025/4/504617735/IT/IA/BJ/1758521/15-minute-fiber-timer-125x125.jpg" },
@@ -20,7 +22,7 @@ const categories = [
   { name: "HPN Spare Parts", img: "https://5.imimg.com/data5/SELLER/Default/2024/1/375216558/RC/OE/CI/1758521/non-touch-water-cooler-125x125.jpg" },
 ];
 
-const products = [
+const productss = [
   { name: "Non Touch Water Cooler", price: "₹ 3,12,700 / Piece", details: ["Storage Capacity: Instant", "Cooling Capacity: 30GPH", "Brand: Danfrost Haws"], img: "https://5.imimg.com/data5/SELLER/Default/2024/1/375216558/RC/OE/CI/1758521/non-touch-water-cooler-250x250.jpg" },
   { name: "Customized RO Plant", price: "₹ 1,55,900 / Piece", details: ["RO Capacity: 1000 LPH", "Material: FRP", "Media: Activated Carbon + sand"], img: "https://5.imimg.com/data5/SELLER/Default/2022/12/SR/RB/SG/1758521/customized-ro-plant-250x250.webp" },
    { name: "Non Touch Water Cooler", price: "₹ 3,12,700 / Piece", details: ["Storage Capacity: Instant", "Cooling Capacity: 30GPH", "Brand: Danfrost Haws"], img: "https://5.imimg.com/data5/SELLER/Default/2024/1/375216558/RC/OE/CI/1758521/non-touch-water-cooler-250x250.jpg" },
@@ -50,12 +52,16 @@ const productsVideo = [
   { name: "Commercial RO Plant", video: "/videos/commercial-ro.mp4" },
 ];
 
+
+
 const Home = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
       <Nav />
+ 
+     
       
       {/* Categories Section */}
       <section className="w-full bg-gradient-to-r from-blue-50 via-teal-50 to-pink-50 py-10 mt-12">
@@ -76,7 +82,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-6">
           <h2 className="text-3xl font-bold mb-6 text-gray-800 text-center">Featured Products</h2>
           <div className="flex space-x-6 overflow-x-auto scrollbar-hide py-4">
-            {products.map((prod, idx) => (
+            {productss.map((prod, idx) => (
               <motion.div key={idx} whileHover={{ scale: 1.05, boxShadow: "0 10px 20px rgba(0,0,0,0.2)" }} className="bg-white rounded-xl shadow-md min-w-[280px] max-w-[300px] flex-shrink-0 flex flex-col">
                 <img src={prod.img} alt={prod.name} className="w-full h-48 object-cover rounded-t-xl" />
                 <div className="p-4 flex flex-col flex-1">
@@ -127,6 +133,7 @@ const Home = () => {
           </div>
         </section>
       ))}
+      
 
       {/* Product Videos Section */}
       <section className="py-16 bg-gradient-to-r from-blue-50 via-teal-50 to-pink-50">
@@ -149,6 +156,7 @@ const Home = () => {
 
       {/* Modal */}
       <QuoteModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+        
 
       <Footer />
     </>

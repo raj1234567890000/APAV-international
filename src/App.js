@@ -1,29 +1,45 @@
+
 import React from 'react'
 
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import Home from './Components/Home'
-import Products from './Components/Products '
+//import Products from './Components/Products '
 import About from './Components/About'
 import ServicesPage from './Components/ServicesPage'
 import ContactPage from './Components/ContactPage'
 import ScrollToTop from './Components/ScrollToTop'
+import Search from './Components/Search'
+
+
+
+
+
+
+
 
 
 
 const App = () => {
+ 
+
   return (
     <>
   <BrowserRouter>
 <ScrollToTop/>
-    
+
+  
       <Routes>
         <Route path="/" element={<Home />} />
-         <Route path="/Product" element={<Products/>} />
+        {/* <Route path="/Product" element={<Products/>} />*/}
          <Route path="/about" element={<About/>} />
           <Route path="/services" element={<ServicesPage/>} />
            <Route path="/contact" element={<ContactPage/>} />
+            <Route path="/allproduct" element={<Search/>} />
+       
+ 
+        
       </Routes>
       
     </BrowserRouter>

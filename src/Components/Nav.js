@@ -13,7 +13,7 @@ import Box from "@mui/material/Box";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 //import Ielts from "../Images/Ielts.jpg";
-import { Home, Info, BookOpen, Globe, Mail } from "lucide-react";
+import { Home, Info, BookOpen,  Mail } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function Nav() {
@@ -24,11 +24,13 @@ export default function Nav() {
 
   const menuItems = [
     { name: "Home", path: "/", icon: <Home size={20} /> },
-      { name: "Products", path: "/Product", icon: <Globe size={20} /> },
+     //{ name: "Products", path: "/Product", icon: <Globe size={20} /> },
+       { name: "AllProduct", path: "/allproduct", icon: <Mail size={20} /> },
     { name: "About", path: "/about", icon: <Info size={20} /> },
     { name: "Services", path: "/services", icon: <BookOpen size={20} /> },
   
     { name: "Contact Us", path: "/contact", icon: <Mail size={20} /> },
+   
   ];
 
   const desktopItemVariants = {
